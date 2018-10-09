@@ -532,7 +532,8 @@ public class IndexController {
 		int lastpath = CurrentClassFilePath.lastIndexOf("classes/");
 		String subCurrent = CurrentClassFilePath.substring(0, lastpath);
 		final String web_rootPath = subCurrent.replace("WEB-INF/", "index_static.htm");
-		boolean isGenerator = HtmlGenerator.createHtmlPage("http://10.224.9.99:8088/index.html", web_rootPath);
+		boolean isGenerator = HtmlGenerator.createHtmlPage("http://127.0.0.1:8080/index.html", web_rootPath);
+//		boolean isGenerator = HtmlGenerator.createHtmlPage("http://10.224.9.99:8088/index.html", web_rootPath);
 		
 		
 		response.setCharacterEncoding("UTF-8");
